@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="profile" class="profile-pic" />
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="subtitle"></p>
+            <button class="btn" onclick="scrollToAbout()">Learn More</button>
+        </div>
+    </section>
+    <div class="separator"></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Saya adalah seorang pengembang web yang berfokus pada pembuatan website 
+            yang responsif, menarik, dan interaktif. Memiliki ketertarikan pada teknologi,
+            UI/UX, dan pengembangan software modern.
+        </p>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">UI/UX</div>
+        </div>
+    </section>
+    <div class="separator"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Deskripsi singkat proyek.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Deskripsi singkat proyek.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Deskripsi singkat proyek.</p>
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Message" required></textarea>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </section>
+    <div class="separator"></div>
+
+    <footer>
+        <p>© 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Thank you for your response.</h2>
+            <p>We will contact you via email.</p>
+            <button id="closePopup" class="btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
