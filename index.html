@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liony — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap (optional grid) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header fade-target">
+    <nav class="navbar container d-flex align-items-center justify-content-between">
+      <div class="brand-wrap d-flex align-items-center gap-3">
+        <a class="brand" href="#home">LIONY</a>
+      </div>
+
+      <ul class="nav-links list-unstyled d-flex gap-3 mb-0">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-skills">About & Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero fade-target">
+      <div class="hero-decor left"></div>
+      <div class="hero-decor right"></div>
+
+      <div class="container hero-inner text-center">
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1000&auto=format&fit=crop&s=1" alt="Liony profile" class="profile-img">
+          <h1 class="hero-title glow">Hi, I'm <span class="accent">Liony</span></h1>
+          <div id="subtitleContainer" class="subtitle-container" aria-live="polite"></div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary-soft">See My Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
+          </div>
+        </div>
+
+        <!-- tiny floating icons -->
+        <ul class="floating-icons" aria-hidden="true">
+          <li style="--i:0;"></li>
+          <li style="--i:1;"></li>
+          <li style="--i:2;"></li>
+          <li style="--i:3;"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT + SKILLS -->
+    <section id="about-skills" class="section pastel-section fade-target">
+      <div class="container">
+        <div class="card frosted about-card">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h2 class="section-title">About Me</h2>
+              <p class="about-text">
+                I'm Liony — a System Information student who adores soft design and clean code.
+                I mix curiosity with calm aesthetics: building interfaces that feel gentle, easy, and delightful.
+                I learn by designing micro-interactions, prototyping in Figma, and coding with patience.
+                <span class="small-note">Learn new things everyday.</span>
+              </p>
+
+              <div class="meta-row d-flex flex-wrap gap-2 mt-3">
+                <span class="meta-pill">📍 Medan</span>
+                <span class="meta-pill">🎓 Student — Sistem Informasi</span>
+                <span class="meta-pill">✨ Open to collaborations</span>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <h3 class="subtitle-soft">Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-bubble">HTML</div>
+                <div class="skill-bubble">CSS</div>
+                <div class="skill-bubble">JavaScript</div>
+                <div class="skill-bubble">UI/UX</div>
+                <div class="skill-bubble">Bootstrap</div>
+                <div class="skill-bubble">Figma</div>
+                <div class="skill-bubble">GitHub</div>
+                <div class="skill-bubble">PHP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-target">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Featured Projects</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="project-card frosted">
+              <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1200&auto=format&fit=crop&s=1" alt="Portfolio project" />
+              <div class="project-body">
+                <div>
+                  <h4>Personal Portfolio</h4>
+                  <p>Soft UI portfolio with micro-interactions and dreamy pastel identity.</p>
+                </div>
+                <div class="card-actions">
+                  <a class="btn btn-primary-soft w-100" href="#">View More</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="project-card frosted">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&s=1" alt="Cooking landing" />
+              <div class="project-body">
+                <div>
+                  <h4>Cooking Landing</h4>
+                  <p>Responsive landing page for recipes with approachable UI and clear CTAs.</p>
+                </div>
+                <div class="card-actions">
+                  <a class="btn btn-primary-soft w-100" href="#">View More</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="project-card frosted">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop&s=1" alt="QRIS App" />
+              <div class="project-body">
+                <div>
+                  <h4>QRIS Payment App (Prototype)</h4>
+                  <p>Prototype cashier app focused on usability and quick checkout flow.</p>
+                </div>
+                <div class="card-actions">
+                  <a class="btn btn-primary-soft w-100" href="#">View More</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section pastel-section fade-target">
+      <div class="container">
+        <div class="contact-card frosted mx-auto">
+          <h2 class="section-title text-center mb-3">Get in touch</h2>
+
+          <form id="contactForm" class="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input id="name" class="form-control input-soft" type="text" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <input id="email" class="form-control input-soft" type="email" placeholder="Your email" required>
+                <small id="emailWarning" class="text-danger d-none">Email must contain '@'</small>
+              </div>
+              <div class="col-12">
+                <textarea id="message" class="form-control input-soft" rows="5" placeholder="Message (optional)"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-primary-soft" type="submit">Send message</button>
+              </div>
+            </div>
+          </form>
+
+          <p class="muted small mt-3 text-center">Or say hi on <a href="#" class="muted link">Instagram</a> / <a href="#" class="muted link">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT SUCCESS POPUP -->
+  <div id="contactPopup" class="contact-popup">
+    <div class="popup-content">
+      <p>Thank you for your response. Will contact you soon.</p>
+      <button id="closePopup" class="btn btn-ghost">Close</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer fade-target">
+    <div class="container text-center">
+      <p class="muted mb-0">© 2025 Liony — Portfolio by Liony.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
